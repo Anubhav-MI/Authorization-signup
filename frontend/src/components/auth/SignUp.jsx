@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, provider } from "../../firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+
 const SignUp = () => {
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
@@ -58,36 +59,6 @@ const SignUp = () => {
     }
   }
   return (
-    // <div className="sign-in-container">
-    //   <form onSubmit={signUp}>
-    //     <h1>Create Account</h1>
-    //     <input
-    //       type="email"
-    //       placeholder="Enter your email"
-    //       value={mail}
-    //       onChange={(e) => setMail(e.target.value)}
-    //     ></input>
-    //     <input
-    //       type="password"
-    //       placeholder="Enter your password"
-    //       value={password}
-    //       onChange={(e) => setPassword(e.target.value)}
-    //     ></input>
-    //     <button type="submit">Sign Up</button>
-    //     <button type="submit" onClick={signInWithGoogle}>
-    //       Sign in with Google
-    //     </button>
-    //     <p>Already signed up</p>
-    //     <button
-    //       type="submit"
-    //       onClick={(e) => {
-    //         navigate(`/signin`);
-    //       }}
-    //     >
-    //       Log in here
-    //     </button>
-    //   </form>
-    // </div>
     <div className={styles.container}>
       <form onSubmit={signUp}>
         <h1 className={styles.heading}>Sign Up Form</h1>

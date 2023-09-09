@@ -19,7 +19,6 @@ mongoose
 const userSchema = new mongoose.Schema({
   email: String,
   username: String,
-  //   colorcode: String,
 });
 
 const user = mongoose.model("user", userSchema);

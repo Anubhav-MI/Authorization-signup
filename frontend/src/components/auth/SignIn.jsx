@@ -61,36 +61,6 @@ const SignIn = () => {
   }
 
   return (
-    // <div className="sign-in-container">
-    //   <form onSubmit={signIn}>
-    //     <h1>Log in to your account</h1>
-    //     <input
-    //       type="email"
-    //       placeholder="Enter your email"
-    //       value={mail}
-    //       onChange={(e) => setMail(e.target.value)}
-    //     ></input>
-    //     <input
-    //       type="password"
-    //       placeholder="Enter your password"
-    //       value={password}
-    //       onChange={(e) => setPassword(e.target.value)}
-    //     ></input>
-    //     <button type="submit">Log In</button>
-    //     <button type="submit" onClick={signInWithGoogle}>
-    //       Sign in with Google
-    //     </button>
-    //     <p>Don't have an account?</p>
-    //     <button
-    //       type="submit"
-    //       onClick={(e) => {
-    //         navigate(`/`);
-    //       }}
-    //     >
-    //       Sign Up
-    //     </button>
-    //   </form>
-    // </div>
     <div className={styles.container}>
       <form onSubmit={signIn}>
         <h1 className={styles.heading}>Log in Form</h1>

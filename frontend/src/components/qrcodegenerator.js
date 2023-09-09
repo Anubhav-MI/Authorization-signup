@@ -4,7 +4,7 @@ import QRCode from "qrcode.react";
 const QRCodeGenerator = ({ userPageUrl, color }) => {
   const qrCodeStyle = {
     backgroundColor: "white", // You can set the background color here
-    color: color || "blue", // Use the provided color or default to black
+    color: color || "blue", // Use the provided color or default to blue
   };
 
   return (
