@@ -38,10 +38,13 @@ const SignUp = () => {
 
   async function sendData(name, mail) {
     try {
-      const response = await axios.post("http://localhost:3001/api/senddata", {
-        username: name,
-        email: mail,
-      });
+      const response = await axios.post(
+        "https://authorization-firebase.onrender.com/api/senddata",
+        {
+          username: name,
+          email: mail,
+        }
+      );
 
       if (response.status === 200) {
         // Handle success

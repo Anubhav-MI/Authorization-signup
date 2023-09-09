@@ -8,9 +8,14 @@ const port = 3001;
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect(
-  "mongodb+srv://anubhavmi:test123@cluster0.telzkjw.mongodb.net/Test"
-);
+mongoose
+  .connect("mongodb+srv://anubhavmi:test123@cluster0.telzkjw.mongodb.net/Test")
+  .then(() => {
+    console.log("databse connected");
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 const userSchema = new mongoose.Schema({
   email: String,
   username: String,
