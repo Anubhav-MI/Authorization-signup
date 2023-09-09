@@ -6,7 +6,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyAVadjKXYC0tIGAG75QNzUSNyj2jvhwF54",
   // authDomain: "test-a3b19.firebaseapp.com",
-  authDomain: "https://authorization-firebase.onrender.com",
+  authDomain: "https://qr-code-generator-jify.onrender.com",
   projectId: "test-a3b19",
   storageBucket: "test-a3b19.appspot.com",
   messagingSenderId: "425640217548",
